@@ -1,0 +1,20 @@
+image: ubuntu:focal
+
+before_script:
+  # Edit apt-get command to install software you'll need for your
+  # tests (python v3, pip- look up what the package names are in
+  # Ubuntu)
+  - apt-get update
+  - apt-get install -y FILL IN PACKAGE NAMES HERE
+  - pip3 install coverage # Install the coverage library for Python3
+
+unit_tests:
+  stage: test
+  script:
+    # Add commands to run your tests and produce coverage information,
+    # just as you would in the terminal.
+    #
+    # Note that each job begins with you back at the top level of
+    # your repository.
+    - 
+    -
